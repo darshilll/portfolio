@@ -21,15 +21,19 @@ const Hero = () => {
       <div className="flex justify-center">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[30px] md:text-5xl lg:text-6xl"
             words={"Hello. I'm Darshil."}
           />
           <TextGenerateEffect
-            className="text-center md:tracking-wider mb-4 text-md md:text-lg lg:text-2xl"
+            className="text-center text-[30px] md:text-5xl lg:text-6xl -mt-6 md:-mt-8 "
+            words={"A Full-Stack Developer."}
+          />
+          {/* <TextGenerateEffect
+            className="text-center md:tracking-wider mb-4 text-md md:text-lg lg:text-xl"
             words={
               "I am passionate about continuous learning and always strive to improve my skills in order to deliver high-quality software solutions"
             }
-          />
+          /> */}
           <a href="">
             <MagicButton
               title="Download CV "
