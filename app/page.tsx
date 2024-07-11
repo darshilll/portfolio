@@ -1,5 +1,11 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
 
 export default function Home() {
-  return <div className="text-red-600">Portfolio</div>;
+  return (
+    <main className="relative bg-black-100 flex-center text-white flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <div className=" w-full">
+        <Hero />
+      </div>
+    </main>
+  );
 }
