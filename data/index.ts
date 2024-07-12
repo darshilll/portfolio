@@ -7,6 +7,27 @@ export const navItems = [
 
 export const gridItems = [
   {
+    id: 1,
+    title: "About Me",
+    description:
+      "I am a Full-Stack Developer, with a strong focus on Frontend Development and Java. I specialize in developing MERN applications and I'm currently pursuing Bachelor of Engineering (B.E) in Computer Science from SITRC. I work persistently, with self-discipline and commitment, to enhance my skills. In addition to coding, I enjoy building side projects and contributing to open-source projects because it allows me to explore my creativity and accomplish exciting tasks.",
+    className: "lg:col-span-5 md:col-span-6 md:row-span-4 lg:min-h-[30vh]",
+    imgClassName: "w-full h-full",
+    titleClassName: "",
+    img: "",
+    spareImg: "",
+  },
+  {
+    id: 2,
+    title: "Skillset",
+    description: "",
+    className: "lg:col-span-5 md:col-span-6 md:row-span-2 lg:min-h-[70vh]",
+    imgClassName: "",
+    titleClassName: "justify-center",
+    img: "",
+    spareImg: "",
+  },
+  {
     id: 3,
     title: "My tech stack",
     description: "I constantly try to improve",
@@ -46,7 +67,7 @@ export const projects = [
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    link: "/ui.earth.com",
   },
   {
     id: 2,
@@ -54,7 +75,7 @@ export const projects = [
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "/ui.yoom.com",
   },
   {
     id: 3,
@@ -62,7 +83,7 @@ export const projects = [
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "/ui.aiimg.com",
   },
   {
     id: 4,
@@ -70,7 +91,7 @@ export const projects = [
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "/ui.apple.com",
   },
 ];
 
