@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   return (
-    <div className=" p-6">
+    <div className="pt-4">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"

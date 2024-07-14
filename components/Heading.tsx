@@ -1,5 +1,6 @@
 import { FaLocationArrow } from "react-icons/fa";
 import MagicButton from "./ui/MagicButton";
+import { motion } from "framer-motion";
 
 /* eslint-disable react/no-unescaped-entities */
 const Heading = () => {
@@ -8,7 +9,14 @@ const Heading = () => {
       id="home"
       className="pt-72 w-full flex flex-col justify-center items-center gap-4"
     >
-      <div className="flex flex-col justify-center items-center w-full text-center">
+      <motion.div
+        className="flex flex-col justify-center items-center w-full text-center"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.5,
+        }}
+      >
         <p className="font-bold text-6xl">Hello. I'm Darshil.</p>
         <p className="font-bold text-6xl text-purple">
           A Full-Stack Developer.
@@ -20,12 +28,22 @@ const Heading = () => {
             eaque ea doloribus quam beatae odio recusandae.
           </p>
         </span>
-      </div>
-      <MagicButton
-        title={"Download CV"}
-        icon={<FaLocationArrow />}
-        position={"left"}
-      />
+      </motion.div>
+      <motion.a
+        href="/Darshilresume.pdf"
+        download
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.7,
+        }}
+      >
+        <MagicButton
+          title={"Download CV"}
+          icon={<FaLocationArrow />}
+          position={"left"}
+        />
+      </motion.a>
     </section>
   );
 };
