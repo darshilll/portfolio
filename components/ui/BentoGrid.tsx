@@ -1,13 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
+import { motion } from "framer-motion";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { GlobeDemo } from "./GridGlobe";
 import { cn } from "@/utils/cn";
+import Lottie from "react-lottie";
+import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
   className,
@@ -84,71 +85,72 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 -mt-12",
+        "row-span-1 relative overflow-hidden rounded-3xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 -mt-12 w-full",
         className
       )}
     >
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center h-full"} `}>
-        {id === 6 && (
-          // add background animation , remove the p tag
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-          </BackgroundGradientAnimation>
-        )}
-
         <div
           className={cn(
             titleClassName,
             "relative md:h-full min-h-40 flex flex-col"
           )}
         >
-          <div className="flex flex-col justify-center items-center gap-20">
-            <div
-              className={`font-sans text-lg lg:text-3xl max-w-96 font-semibold`}
-            >
+          <motion.div
+            className="flex flex-col justify-center items-center gap-20"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.2,
+            }}
+          >
+            <div className={`font-sans text-lg lg:text-3xl font-semibold`}>
               {title}
             </div>
             <div className="font-sans md:text-xs lg:text-xl text-sm z-10 px-72">
               {description}
             </div>
-          </div>
+          </motion.div>
 
           {/* for the github 3d globe */}
           {id === 2 && <GlobeDemo />}
 
           {/* Tech stack list div */}
           {id === 2 && (
-            <div className="flex flex-col gap-1 lg:gap-5 w-fit absolute mt-60 px-64  z-50">
+            <div
+              className="flex-col flex_center gap-1 w-full lg:gap-2 absolute mt-60 px-64 z-50 select-none"
+              id="skill"
+            >
               {/* tech stack lists */}
-              <div className="flex gap-3  lg:gap-8">
+              <div className="flex gap-2">
                 {firstLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-3 lg:px-5 py-2 px-3 text-xs lg:text-lg opacity-50 
+                    lg:opacity-100 rounded-xl text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
               </div>
-              <div className="flex gap-3 lg:gap-8">
+              <div className="flex gap-2">
                 {middleLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-3 lg:px-5 py-2 px-3 text-xs lg:text-lg opacity-50 
+                    lg:opacity-100 rounded-xl text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
                 ))}
               </div>
-              <div className="flex gap-3 lg:gap-8">
+              <div className="flex gap-2">
                 {thirdLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-3 lg:px-5 py-2 px-3 text-xs lg:text-lg opacity-50 
+                    lg:opacity-100 rounded-xl text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -156,27 +158,6 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
-          {/* {id === 6 && (
-            <div className="mt-5 relative">
-              
-              <div
-                className={`absolute -bottom-5 right-0 ${
-                  copied ? "block" : "block"
-                }`}
-              >
-                
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
-
-              <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#161A31]"
-              />
-            </div>
-          )} */}
         </div>
       </div>
     </div>

@@ -56,7 +56,7 @@ const Hero = () => {
           </motion.div>
         </nav>
         <Heading />
-        <About />
+        <About id={6} />
         {/* <Skill /> */}
       </header>
     </div>
