@@ -5,6 +5,7 @@ import { useState } from "react";
 import Heading from "./Heading";
 import About from "./About";
 import { motion } from "framer-motion";
+import Skill from "./Skill";
 
 const Hero = () => {
   const [active, setActive] = useState(false);
@@ -56,6 +57,7 @@ const Hero = () => {
         </nav>
         <Heading />
         <About />
+        {/* <Skill /> */}
       </header>
     </div>
   );

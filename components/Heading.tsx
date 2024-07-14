@@ -14,7 +14,7 @@ const Heading = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.5,
+          delay: 0.1,
         }}
       >
         <p className="font-bold text-6xl">Hello. I'm Darshil.</p>
@@ -35,7 +35,7 @@ const Heading = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.7,
+          delay: 0.2,
         }}
       >
         <MagicButton

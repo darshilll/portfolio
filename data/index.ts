@@ -7,57 +7,37 @@ export const navItems = [
 
 export const gridItems = [
   {
-    id: 1,
-    title: "About Me",
-    description:
-      "I am a Full-Stack Developer, with a strong focus on Frontend Development and Java. I specialize in developing MERN applications and I'm currently pursuing Bachelor of Engineering (B.E) in Computer Science from SITRC. I work persistently, with self-discipline and commitment, to enhance my skills. In addition to coding, I enjoy building side projects and contributing to open-source projects because it allows me to explore my creativity and accomplish exciting tasks.",
-    className: "lg:col-span-5 md:col-span-6 md:row-span-4 lg:min-h-[30vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "",
-    img: "",
-    spareImg: "",
-  },
-  {
     id: 2,
     title: "Skillset",
     description: "",
-    className: "lg:col-span-5 md:col-span-6 md:row-span-2 lg:min-h-[70vh]",
+    className: "lg:col-span-10 md:col-span-6 md:row-span-2 lg:min-h-[70vh]",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
   },
 
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
+  // {
+  //   id: 4,
+  //   title: "Tech enthusiast with a passion for development.",
+  //   description: "",
+  //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+  //   imgClassName: "",
+  //   titleClassName: "justify-start",
+  //   img: "/grid.svg",
+  //   spareImg: "/b4.svg",
+  // },
+
+  // {
+  //   id: 6,
+  //   title: "Do you want to start a project together?",
+  //   description: "",
+  //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+  //   imgClassName: "",
+  //   titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+  //   img: "",
+  //   spareImg: "",
+  // },
 ];
 
 export const projects = [
