@@ -5,6 +5,63 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 20rem 0 2rem;
+}
+
+.section_subtitle {
+  display: block;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -84,6 +141,10 @@
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
+  }
+
+  .flex_center {
+    @apply flex justify-center items-center;
   }
 
   .black-gradient {

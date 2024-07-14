@@ -1,11 +1,20 @@
+"use client";
 import { FaLocationArrow } from "react-icons/fa";
-import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { useState } from "react";
+import Heading from "./Heading";
+import About from "./About";
+import { motion } from "framer-motion";
 
 const Hero = () => {
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(true);
+  };
+
   return (
-    <div className="pb-20 pt-60">
+    <div className=" p-6">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -17,32 +26,37 @@ const Hero = () => {
         />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
       </div>
-
-      <div className="flex justify-center">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <TextGenerateEffect
-            className="text-center text-[30px] md:text-5xl lg:text-6xl"
-            words={"Hello. I'm Darshil."}
-          />
-          <TextGenerateEffect
-            className="text-center text-[30px] md:text-5xl lg:text-6xl -mt-6 md:-mt-8 "
-            words={"A Full-Stack Developer."}
-          />
-          {/* <TextGenerateEffect
-            className="text-center md:tracking-wider mb-4 text-md md:text-lg lg:text-xl"
-            words={
-              "I am passionate about continuous learning and always strive to improve my skills in order to deliver high-quality software solutions"
-            }
-          /> */}
-          <a href="">
-            <MagicButton
-              title="Download CV "
-              icon={<FaLocationArrow />}
-              position={"left"}
-            />
-          </a>
-        </div>
-      </div>
+      <header>
+        <nav>
+          <motion.div
+            className="w-full flex items-center justify-center fixed z-10"
+            initial={{ x: 300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -300, opacity: 0 }}
+          >
+            <ul className="flex items-center justify-center gap-16 bg-[#161a31] rounded-full px-4 py-3 max-w-fit bg-opacity-80 backdrop-blur-[0.5rem]">
+              <li onClick={() => handleClick}>
+                {active ? "" : ""}
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#skill">Skills</a>
+              </li>
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+            </ul>
+          </motion.div>
+        </nav>
+        <Heading />
+        <About />
+      </header>
     </div>
   );
 };
