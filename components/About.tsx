@@ -51,19 +51,18 @@ const About = ({ id, className }: { id: number; className?: string }) => {
       </div>
       <div
         className={cn(
-          "row-span-1 relative overflow-hidden rounded-2xl  transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 w-full h-[12rem]",
-          className
+          "row-span-3 relative overflow-hidden rounded-2xl  transition duration-200 shadow-input dark:shadow-none space-y-4 w-full h-[12rem]"
         )}
       >
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-2xl">
+            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl -mt-9 text-center md:text-2xl">
               Do you want to start a project together?
             </div>
           </BackgroundGradientAnimation>
         )}
         {id === 6 && (
-          <div className=" relative">
+          <div className="relative top-28 flex_center">
             <div className={`absolute ${copied ? "block" : "block"}`}>
               <Lottie options={defaultOptions} height={200} width={400} />
             </div>
