@@ -17,27 +17,16 @@ export const gridItems = [
     spareImg: "",
   },
 
-  {
-    id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
+  // {
+  //   id: 4,
+  //   title: "Tech enthusiast with a passion for development.",
+  //   description: "",
+  //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+  //   imgClassName: "",
+  //   titleClassName: "justify-start",
+  //   img: "/grid.svg",
+  //   spareImg: "/b4.svg",
+  // },
 ];
 
 export const projects = [
