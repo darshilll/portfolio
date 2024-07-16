@@ -1,11 +1,12 @@
 "use client";
-import { FaLocationArrow } from "react-icons/fa";
 import { Spotlight } from "./ui/Spotlight";
 import { useState } from "react";
 import Heading from "./Heading";
 import About from "./About";
 import { motion } from "framer-motion";
-import Skill from "./Skill";
+import Experience from "./Experience";
+import Grid from "./Grid";
+import Projects from "./Projects";
 
 const Hero = () => {
   const [active, setActive] = useState(false);
@@ -57,7 +58,9 @@ const Hero = () => {
         </nav>
         <Heading />
         <About id={6} />
-        {/* <Skill /> */}
+        <Grid />
+        <Experience />
+        <Projects />
       </header>
     </div>
   );
