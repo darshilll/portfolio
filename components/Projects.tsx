@@ -21,7 +21,7 @@ const Projects = () => {
                 <img
                   src={img}
                   alt={title}
-                  className="z-20 absolute bottom-0 transform rotate(2.63 14.8994 0.136963)"
+                  className="z-20 absolute bottom-0 transform rotate-[2.63] origin-[14.8994px_0.136963px]"
                   width={500}
                   height={300}
                 />

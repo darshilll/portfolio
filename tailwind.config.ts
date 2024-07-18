@@ -26,6 +26,9 @@ const config = {
       },
     },
     extend: {
+      rotate: {
+        "2.63": "2.63deg",
+      },
       colors: {
         black: {
           DEFAULT: "#000",
