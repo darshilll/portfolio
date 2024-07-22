@@ -18,7 +18,7 @@ export const PinContainer = ({
   containerClassName?: string;
 }) => {
   const [transform, setTransform] = useState(
-    "translate(-50%,-50%) rotateX(0deg)"
+    "translate(-50%,-50%) rotateX(deg)"
   );
 
   const onMouseEnter = () => {
