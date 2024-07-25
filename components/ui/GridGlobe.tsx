@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
 const World = dynamic(() => import("./Globe").then((m) => m.World), {
@@ -397,8 +396,8 @@ export function GlobeDemo() {
   return (
     <div className="flex items-center justify-center absolute -left-5 top-36 md:top-40 w-full h-full">
       <div className=" w-full relative overflow-hidden px-4 h-96">
-        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent z-40" />
-        <div className="absolute w-full h-72 md:h-full z-10">
+        <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent z-8" />
+        <div className="absolute w-full h-72 md:h-full z-5">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>

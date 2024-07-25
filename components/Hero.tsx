@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Experience from "./Experience";
 import Grid from "./Grid";
 import Projects from "./Projects";
+import Footer from "./Footer";
 
 const Hero = () => {
   const [active, setActive] = useState(false);
@@ -31,7 +32,7 @@ const Hero = () => {
       <header>
         <nav>
           <motion.div
-            className="w-full flex items-center justify-center fixed z-10"
+            className="w-full flex items-center justify-center fixed z-50"
             initial={{ x: 300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -300, opacity: 0 }}
@@ -61,6 +62,7 @@ const Hero = () => {
         <Grid />
         <Experience />
         <Projects />
+        <Footer />
       </header>
     </div>
   );

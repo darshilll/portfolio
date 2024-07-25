@@ -36,9 +36,9 @@ const Skill = ({ id }: { id: number }) => {
 
       {/* Tech stack list div */}
       {id === 2 && (
-        <div className="flex flex-col gap-1 lg:gap-5 w-fit absolute px-64 z-50">
+        <div className="flex flex-col gap-1 lg:gap-5 w-fit px-64">
           {/* tech stack lists */}
-          <div className="flex gap-3  lg:gap-8">
+          <div className="flex gap-3 lg:gap-8 absolute z-60">
             {firstLists.map((item, i) => (
               <span
                 key={i}
