@@ -132,17 +132,21 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "GirlScript Summer Of Code",
+    desc: "Open Source Contributor",
+    desc1:
+      "Led contributions to various open-source projects using MERN stack, TypeScript, Next.js, Tailwind CSS, and Firebase. Innovated solutions and improved project functionality under the guidance of mentorship of the Girlscript community.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    date: "May 2024 - Present",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "CognoRise Infotech",
+    desc: "Web Development Intern",
+    desc1:
+      "Developed responsive web pages using React.js ensuring optimal user experience and interface responsiveness.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    date: "March 2024 - April 2024",
   },
 ];
 
