@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 import { GlobeDemo } from "./GridGlobe";
 import { cn } from "@/utils/cn";
 
@@ -12,6 +12,20 @@ export const BentoGrid = ({
   children?: React.ReactNode;
 }) => {
   return <div className={cn("")}>{children}</div>;
+};
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * i,
+    },
+  }),
 };
 
 export const BentoGridItem = ({
@@ -88,13 +102,20 @@ export const BentoGridItem = ({
               {/* tech stack lists */}
               <ul className="flex_center flex-wrap  gap-2 text-lg">
                 {firstLists.map((item, i) => (
-                  <li
+                  <motion.li
                     key={i}
                     className="lg:px-7 lg:py-4 py-2 px-3 text-sm lg:text-lg opacity-50 
                     lg:opacity-100 rounded-xl text-center bg-[#10132E]"
+                    variants={fadeInAnimationVariants}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{
+                      once: true,
+                    }}
+                    custom={i}
                   >
                     {item}
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </div>

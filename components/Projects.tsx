@@ -8,7 +8,10 @@ const Projects = () => {
       <p className="text-3xl flex_center font-semibold">Projects</p>
       <div className=" flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 lg:mt-10">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
-          <div key={id} className="h-[34rem] flex_center sm:w-[700px] w-[80vw]">
+          <div
+            key={id}
+            className="md:h-[36rem] h-[29rem] flex_center sm:w-[700px] w-[80vw]"
+          >
             <PinContainer title={link} href={link}>
               <div className="relative flex_center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]"></div>
