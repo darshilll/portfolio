@@ -41,11 +41,6 @@ const Projects = () => {
                     </div>
                   ))}
                 </div>
-                <div>
-                  <div className="flex_center">
-                    {/* <img src="/git.svg" alt="git" height={25} width={25} /> */}
-                  </div>
-                </div>
               </div>
             </PinContainer>
           </div>

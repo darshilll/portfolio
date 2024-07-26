@@ -115,7 +115,7 @@ export const BentoGridItem = ({
           {/* Tech stack list div */}
           {id === 2 && (
             <div
-              className="flex-col flex_center gap-1 w-full lg:gap-2 absolute mt-60 px-64 z-50 select-none"
+              className="flex-col flex_center gap-1 w-full lg:gap-2 absolute mt-60 px-64 z-40 select-none"
               id="skill"
             >
               {/* tech stack lists */}

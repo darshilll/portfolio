@@ -7,7 +7,7 @@ const Heading = () => {
   return (
     <section
       id="home"
-      className="pt-72 w-full flex flex-col justify-center items-center gap-4"
+      className="pt-80 md:pt-72 w-full flex flex-col justify-center items-center gap-4"
     >
       <motion.div
         className="flex flex-col justify-center items-center w-full text-center"
@@ -17,16 +17,15 @@ const Heading = () => {
           delay: 0.1,
         }}
       >
-        <p className="font-bold text-6xl">Hello. I'm Darshil.</p>
-        <p className="font-bold text-6xl text-purple">
+        <p className="font-bold text-3xl lg:text-6xl">Hello. I'm Darshil.</p>
+        <p className="font-bold text-3xl lg:text-6xl text-purple">
           A Full-Stack Developer.
         </p>
-        <span className="mt-2 text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quisquam
-          odit nemo quo id enim,
-          <p className="text-center">
-            eaque ea doloribus quam beatae odio recusandae.
-          </p>
+        <span className="mt-2 lg:text-lg text-md text-gray-300 lg:w-[50%]">
+          I am dedicated to driving innovation and excellence by leveraging
+          advanced development techniques, continually enhancing my skills, and
+          high-quality software solutions.
+          <p className="text-center"></p>
         </span>
       </motion.div>
       <motion.a

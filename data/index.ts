@@ -63,72 +63,6 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
-
 export const workExperience = [
   {
     id: 1,
@@ -136,17 +70,19 @@ export const workExperience = [
     desc: "Open Source Contributor",
     desc1:
       "Led contributions to various open-source projects using MERN stack, TypeScript, Next.js, Tailwind CSS, and Firebase. Innovated solutions and improved project functionality under the guidance of mentorship of the Girlscript community.",
-    className: "md:col-span-2",
+
     date: "May 2024 - Present",
+    tech: ["MERN", "Next.js", "Tailwind CSS", "TypeScript", "Firebase"],
   },
   {
     id: 2,
     title: "CognoRise Infotech",
     desc: "Web Development Intern",
     desc1:
-      "Developed responsive web pages using React.js ensuring optimal user experience and interface responsiveness.",
-    className: "md:col-span-2", // change to md:col-span-2
+      "Developed dynamic web applications using the MERN stack, collaborated with teams to deliver scalable solutions, and optimized code for performance. I also resolved complex technical issues, ensuring high-quality and functional outcomes.",
+    // change to md:col-span-2
     date: "March 2024 - April 2024",
+    tech: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
   },
 ];
 

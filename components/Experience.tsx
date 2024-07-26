@@ -1,37 +1,38 @@
 /* eslint-disable react/jsx-no-undef */
 import { workExperience } from "@/data";
-import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   return (
     <section id="experience" className="-mt-16">
-      <div className="w-full">
+      <div className="w-full flex_center flex-col">
         <p className="text-3xl font-semibold flex_center text-center">
-          Experience
+          Work Experience
         </p>
-        <div className="w-full mt-12 flex justify-center items-center flex-col gap-10">
-          {workExperience.map((card) => (
-            <Button
-              key={card.id}
-              borderRadius="1.75rem"
-              className="flex-1 text-white-100 border-neutral-200 dark:border-slate-800 min-w-fit"
-              duration={Math.floor(Math.random() * 100000)}
-            >
+        <div className="w-full mt-12 flex justify-center items-center flex-col gap-10 ml-96 px-44">
+          {workExperience.map(({ id, date, title, desc, desc1, tech }) => (
+            <div key={id}>
               <div className="flex lg:flex-col lg:items-center p-3 py-6 md:p-5 lg:p-5 gap-2 ">
                 <div className="lg:ms-5">
-                  <p className="text-gray-400 text-sm text-start">
-                    {card.date}
+                  <p className="text-gray-400 text-start">{date}</p>
+                  <h1 className="text-start text-xl font-bold">{title}</h1>
+                  <p className="text-left text-white-100 font-semibold">
+                    {desc}
                   </p>
-                  <h1 className="text-start text-xl md:text-2xl font-bold">
-                    {card.title}
-                  </h1>
-                  <p className="text-start text-white-100 mt-3 font-semibold">
-                    {card.desc}
-                  </p>
-                  <p className=" w-[40%] text-lg">{card.desc1}</p>
+                  <p className="w-[70%] text-gray-400">{desc1}</p>
+                  <div className="flex gap-2 mt-2">
+                    {tech.map((item) => (
+                      <span
+                        key={id}
+                        className=" py-1 px-3 text-md opacity-50 
+                    lg:opacity-100 rounded-lg text-center bg-gray-700"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </Button>
+            </div>
           ))}
         </div>
       </div>
