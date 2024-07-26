@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div className="py-20" id="projects">
       <p className="text-3xl flex_center font-semibold">Projects</p>
-      <div className=" flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className=" flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 lg:mt-10">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div key={id} className="h-[34rem] flex_center sm:w-[700px] w-[80vw]">
             <PinContainer title={link} href={link}>

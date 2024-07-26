@@ -70,7 +70,7 @@ export const BentoGridItem = ({
             }}
           >
             <div
-              className={`font-sans text-2xl lg:text-3xl font-bold mb-24 md:mb-10`}
+              className={`font-sans text-2xl lg:text-3xl font-bold mb-28 md:mb-10`}
             >
               {title}
             </div>
@@ -90,7 +90,7 @@ export const BentoGridItem = ({
                 {firstLists.map((item, i) => (
                   <li
                     key={i}
-                    className="lg:px-7 lg:py-4 py-2 px-3 text-xs lg:text-lg opacity-50 
+                    className="lg:px-7 lg:py-4 py-2 px-3 text-sm lg:text-lg opacity-50 
                     lg:opacity-100 rounded-xl text-center bg-[#10132E]"
                   >
                     {item}

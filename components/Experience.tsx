@@ -3,12 +3,12 @@ import { workExperience } from "@/data";
 
 const Experience = () => {
   return (
-    <section id="experience" className="-mt-16">
+    <section id="experience">
       <div className="w-full flex_center flex-col">
         <p className="text-3xl font-semibold flex_center text-center">
           Work Experience
         </p>
-        <div className="w-full mt-12 flex justify-center items-center flex-col gap-10 ml-96 px-44">
+        <div className="w-full mt-12 flex justify-center items-center flex-col gap-10 lg:ml-96 px-44">
           {workExperience.map(({ id, date, title, desc, desc1, tech }) => (
             <div key={id}>
               <div className="flex lg:flex-col lg:items-center p-3 py-6 md:p-5 lg:p-5 gap-2 ">
@@ -18,13 +18,12 @@ const Experience = () => {
                   <p className="text-left text-white-100 font-semibold">
                     {desc}
                   </p>
-                  <p className="w-[70%] text-gray-400">{desc1}</p>
-                  <div className="flex gap-2 mt-2">
+                  <p className="lg:w-[70%] text-gray-400">{desc1}</p>
+                  <div className="flex gap-2 mt-2 w-full">
                     {tech.map((item) => (
                       <span
                         key={id}
-                        className=" py-1 px-3 text-md opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-gray-700"
+                        className="lg:px-5 py-2 px-3 text-sm lg:text-md opacity-100 rounded-lg text-center bg-gray-700"
                       >
                         {item}
                       </span>
