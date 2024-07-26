@@ -5,10 +5,10 @@ const Experience = () => {
   return (
     <section id="experience">
       <div className="w-full flex_center flex-col">
-        <p className="text-3xl font-semibold flex_center text-center">
+        <p className="md:text-3xl text-2xl font-semibold flex_center text-center">
           Work Experience
         </p>
-        <div className="w-full mt-12 flex justify-center items-center flex-col gap-10 xl:ml-96 md:ml-24 px-44">
+        <div className="w-full mt-12 flex justify-center items-center flex-col gap-10 xl:ml-96 px-4 md:ml-24 md:px-44">
           {workExperience.map(({ id, date, title, desc, desc1, tech }) => (
             <div key={id}>
               <div className="flex lg:flex-col lg:items-center p-3 py-6 md:p-5 lg:p-5 gap-2 ">

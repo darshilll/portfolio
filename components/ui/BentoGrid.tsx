@@ -100,12 +100,12 @@ export const BentoGridItem = ({
               id="skill"
             >
               {/* tech stack lists */}
-              <ul className="flex_center flex-wrap  gap-2 text-lg">
+              <ul className="flex_center flex-wrap h-full gap-2 text-lg">
                 {firstLists.map((item, i) => (
                   <motion.li
                     key={i}
                     className="lg:px-7 lg:py-4 py-2 px-3 text-sm lg:text-lg opacity-50 
-                    lg:opacity-100 rounded-xl text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-xl text-center bg-[#10132E] h-full"
                     variants={fadeInAnimationVariants}
                     initial="initial"
                     whileInView="animate"

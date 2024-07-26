@@ -39,8 +39,8 @@ const About = ({ id, className }: { id: number; className?: string }) => {
       }}
     >
       <div className="w-full flex_center flex-col">
-        <p className="text-3xl font-semibold max-w-fit">About Me</p>
-        <div className="md:w-[50%] p-4 mt-10 text-lg leading-1 text-gray-300 text-justify leading-relaxed whitespace-normal break-words">
+        <p className="md:text-3xl text-2xl font-semibold max-w-fit">About Me</p>
+        <div className="md:w-[50%] px-6 mt-10 text-lg leading-1 text-gray-300 text-justify leading-relaxed whitespace-normal break-words">
           I am a Full-Stack Developer, with a strong focus on Frontend
           Development and Java. I specialize in developing MERN applications and
           I've completed Bachelor of Engineering (B.E) in Computer Science from

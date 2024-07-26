@@ -32,12 +32,12 @@ const Hero = () => {
       <header>
         <nav>
           <motion.div
-            className="w-full flex items-center justify-center fixed z-50 "
+            className="w-full flex_center fixed z-50"
             initial={{ x: 300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -300, opacity: 0 }}
           >
-            <ul className="flex items-center justify-center gap-10 text-sm lg:text-base lg:gap-16 bg-[#161a31] rounded-full px-4 py-3 max-w-fit bg-opacity-80 backdrop-blur-[0.5rem]">
+            <ul className="flex_center gap-4 text-xs md:text-base md:gap-16 bg-[#161a31] rounded-full px-4 py-3 max-w-fit bg-opacity-80 backdrop-blur-[0.5rem]">
               <li onClick={() => handleClick}>
                 {active ? "" : ""}
                 <a href="#home">Home</a>
