@@ -10,23 +10,12 @@ export const gridItems = [
     id: 2,
     title: "Skillset",
     description: "",
-    className: "lg:col-span-10 md:col-span-6 md:row-span-2 lg:min-h-[70vh]",
+    className: "lg:col-span-10 md:col-span-6 md:row-span-2 min-h-[70vh]",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
   },
-
-  // {
-  //   id: 4,
-  //   title: "Tech enthusiast with a passion for development.",
-  //   description: "",
-  //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-  //   imgClassName: "",
-  //   titleClassName: "justify-start",
-  //   img: "/grid.svg",
-  //   spareImg: "/b4.svg",
-  // },
 ];
 
 export const projects = [

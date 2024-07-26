@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useState } from "react";
 import { motion } from "framer-motion";
-import animationData from "@/data/confetti.json";
 import { GlobeDemo } from "./GridGlobe";
 import { cn } from "@/utils/cn";
 
@@ -13,16 +11,7 @@ export const BentoGrid = ({
   className?: string;
   children?: React.ReactNode;
 }) => {
-  return (
-    <div
-      className={cn(
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 mx-auto",
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
+  return <div className={cn("")}>{children}</div>;
 };
 
 export const BentoGridItem = ({
@@ -49,34 +38,18 @@ export const BentoGridItem = ({
     "Typescript",
     "Tailwind CSS",
     "React.js",
-  ];
-  const middleLists = [
     "Next.js",
     "Framer-Motion",
     "Node.js",
     "Express.js",
     "MongoDB",
     "MySQL",
+    "Postman",
+    "Firebase",
+    "Git/Github",
+    "AWS",
+    "Docker",
   ];
-
-  const thirdLists = ["Postman", "Firebase", "Git/Github", "AWS", "Docker"];
-
-  const [copied, setCopied] = useState(false);
-
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const handleCopy = () => {
-    const text = "darsgajul2003@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-  };
 
   return (
     <div
@@ -87,12 +60,7 @@ export const BentoGridItem = ({
     >
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center h-full"} `}>
-        <div
-          className={cn(
-            titleClassName,
-            "relative md:h-full min-h-40 flex flex-col"
-          )}
-        >
+        <div className={cn(titleClassName, "relative h-full flex flex-col")}>
           <motion.div
             className="flex flex-col justify-center items-center gap-20"
             initial={{ opacity: 0, y: 100 }}
@@ -101,11 +69,10 @@ export const BentoGridItem = ({
               delay: 0.2,
             }}
           >
-            <div className={`font-sans text-lg lg:text-3xl font-semibold`}>
+            <div
+              className={`font-sans text-2xl lg:text-3xl font-bold mb-24 md:mb-10`}
+            >
               {title}
-            </div>
-            <div className="font-sans md:text-xs lg:text-xl text-sm z-10 px-72">
-              {description}
             </div>
           </motion.div>
 
@@ -115,43 +82,21 @@ export const BentoGridItem = ({
           {/* Tech stack list div */}
           {id === 2 && (
             <div
-              className="flex-col flex_center gap-1 w-full lg:gap-2 absolute mt-60 px-64 z-40 select-none"
+              className="max-w-[53rem] lg:gap-2 absolute z-40 select-none top-20 lg:left-72"
               id="skill"
             >
               {/* tech stack lists */}
-              <div className="flex gap-2">
+              <ul className="flex_center flex-wrap  gap-2 text-lg">
                 {firstLists.map((item, i) => (
-                  <span
+                  <li
                     key={i}
-                    className="lg:py-3 lg:px-5 py-2 px-3 text-xs lg:text-lg opacity-50 
+                    className="lg:px-7 lg:py-4 py-2 px-3 text-xs lg:text-lg opacity-50 
                     lg:opacity-100 rounded-xl text-center bg-[#10132E]"
                   >
                     {item}
-                  </span>
+                  </li>
                 ))}
-              </div>
-              <div className="flex gap-2">
-                {middleLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-3 lg:px-5 py-2 px-3 text-xs lg:text-lg opacity-50 
-                    lg:opacity-100 rounded-xl text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-              <div className="flex gap-2">
-                {thirdLists.map((item, i) => (
-                  <span
-                    key={i}
-                    className="lg:py-3 lg:px-5 py-2 px-3 text-xs lg:text-lg opacity-50 
-                    lg:opacity-100 rounded-xl text-center bg-[#10132E]"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+              </ul>
             </div>
           )}
         </div>
