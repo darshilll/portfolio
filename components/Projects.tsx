@@ -13,7 +13,7 @@ const Projects = () => {
             className="md:h-[36rem] h-[29rem] flex_center sm:w-[700px] w-[80vw]"
           >
             <PinContainer title={link} href={link}>
-              <div className="relative flex_center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] sm:h-[40vh] mb-10">
+              <div className="relative flex_center sm:w-[570px] w-[85vw] overflow-hidden h-[22vh] sm:h-[40vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]"></div>
                 <img
                   src={img}
