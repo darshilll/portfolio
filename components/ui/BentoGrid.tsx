@@ -32,7 +32,6 @@ export const BentoGridItem = ({
   className,
   id,
   title,
-  description,
   titleClassName,
 }: {
   className?: string;
@@ -84,7 +83,7 @@ export const BentoGridItem = ({
             }}
           >
             <div
-              className={`font-sans text-2xl lg:text-3xl font-bold mb-28 md:mb-10`}
+              className={`font-sans text-2xl lg:text-3xl font-semibold mb-28 md:mb-10`}
             >
               {title}
             </div>
@@ -95,29 +94,31 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 2 && (
-            <div
-              className="max-w-[53rem] lg:gap-2 absolute z-40 select-none top-20 lg:left-72"
-              id="skill"
-            >
-              {/* tech stack lists */}
-              <ul className="flex_center flex-wrap h-full gap-2 text-lg">
-                {firstLists.map((item, i) => (
-                  <motion.li
-                    key={i}
-                    className="lg:px-7 lg:py-4 py-2 px-3 text-sm lg:text-lg opacity-50 
+            <div className="w-full flex_center h-full">
+              <div
+                className="max-w-[53rem] lg:gap-2 absolute z-40 select-none top-20 flex_center"
+                id="skill"
+              >
+                {/* tech stack lists */}
+                <ul className="flex_center flex-wrap h-full gap-2 text-lg">
+                  {firstLists.map((item, i) => (
+                    <motion.li
+                      key={i}
+                      className="lg:px-7 lg:py-4 py-2 px-3 text-sm lg:text-lg opacity-50 
                     lg:opacity-100 rounded-xl text-center bg-[#10132E] h-full"
-                    variants={fadeInAnimationVariants}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    custom={i}
-                  >
-                    {item}
-                  </motion.li>
-                ))}
-              </ul>
+                      variants={fadeInAnimationVariants}
+                      initial="initial"
+                      whileInView="animate"
+                      viewport={{
+                        once: true,
+                      }}
+                      custom={i}
+                    >
+                      {item}
+                    </motion.li>
+                  ))}
+                </ul>
+              </div>
             </div>
           )}
         </div>
