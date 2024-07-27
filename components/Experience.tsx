@@ -8,24 +8,24 @@ const Experience = () => {
         <p className="md:text-3xl text-2xl font-semibold flex_center text-center">
           Work Experience
         </p>
-        <div className="w-full mt-12 flex justify-center items-center flex-col gap-10 xl:ml-96 px-4 md:ml-24 md:px-44">
+        <div className="w-full mt-12 flex_center flex-col gap-10 xl:ml-96 md:ml-24 md:px-44 ml-20">
           {workExperience.map(({ id, date, title, desc, desc1, tech }) => (
             <div key={id}>
-              <div className="flex lg:flex-col lg:items-center p-3 py-6 md:p-5 lg:p-5 gap-2 ">
-                <div className="lg:ms-5">
+              <div className="flex w-full lg:flex-col lg:items-center p-3 py-6 md:p-5 lg:p-5 gap-2 ">
+                <div className="lg:ms-5 px-[8rem]">
                   <p className="text-gray-400 text-start">{date}</p>
                   <h1 className="text-start text-xl font-bold">{title}</h1>
                   <p className="text-left text-white-100 font-semibold ">
                     {desc}
                   </p>
-                  <p className="lg:w-[70%] text-gray-400 text-justify leading-relaxed whitespace-normal break-words">
+                  <p className="w-[80%] sm:w-full xl:w-[70%] text-gray-400 text-justify leading-relaxed text-sm md:text-base whitespace-normal break-words">
                     {desc1}
                   </p>
-                  <div className="flex gap-2 mt-2 w-full">
+                  <div className="flex gap-2 mt-2 max-w-fit">
                     {tech.map((item) => (
                       <span
                         key={id}
-                        className="lg:px-5 py-2 px-3 text-xs md:text-md opacity-100 rounded-lg text-center bg-gray-700"
+                        className="lg:px-5 py-2 px-3 text-xs md:text-md opacity-100 rounded-lg text-center bg-gray-700 min-w-fit"
                       >
                         {item}
                       </span>
