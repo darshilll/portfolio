@@ -2,32 +2,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { cn } from "@/utils/cn";
-import { useState } from "react";
-import { BackgroundGradientAnimation } from "./ui/GradientBg";
-import Lottie from "react-lottie";
-import animationData from "@/data/confetti.json";
-import MagicButton from "./ui/MagicButton";
-import { IoCopyOutline } from "react-icons/io5";
 
 /* eslint-disable react/no-unescaped-entities */
 const About = ({ id, className }: { id: number; className?: string }) => {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    const text = "darsgajul2003@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-  };
-
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   return (
     <motion.section
       className="flex_center w-full"
@@ -38,7 +15,7 @@ const About = ({ id, className }: { id: number; className?: string }) => {
         delay: 0.175,
       }}
     >
-      <div className="w-full flex_center flex-col">
+      <div className="w-full flex_center flex-col mt-6">
         <p className="md:text-3xl text-2xl font-semibold max-w-fit">About Me</p>
         <div className="md:w-[50%] px-6 mt-10 text-lg leading-1 text-gray-300 text-justify leading-relaxed whitespace-normal break-words">
           I am a Full-Stack Developer, with a strong focus on Frontend

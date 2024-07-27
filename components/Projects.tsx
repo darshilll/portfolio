@@ -10,7 +10,7 @@ const Projects = () => {
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className="md:h-[36rem] h-[29rem] flex_center sm:w-[700px] w-[80vw]"
+            className="md:h-[36rem] h-[25rem] flex_center sm:w-[700px] w-[80vw]"
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex_center sm:w-[570px] w-[85vw] overflow-hidden h-[22vh] sm:h-[40vh] mb-10">

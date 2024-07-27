@@ -7,7 +7,7 @@ const Heading = () => {
   return (
     <section
       id="home"
-      className="pt-72 w-full flex flex-col justify-center items-center gap-4"
+      className=" pt-[14rem] md:pt-[19rem] w-full flex flex-col justify-center items-center gap-4"
     >
       <motion.div
         className="flex flex-col justify-center items-center w-full text-center"

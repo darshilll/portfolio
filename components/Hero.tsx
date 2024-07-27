@@ -37,7 +37,7 @@ const Hero = () => {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -300, opacity: 0 }}
           >
-            <ul className="flex_center gap-4 text-xs md:text-base md:gap-16 bg-[#161a31] rounded-full px-4 py-3 max-w-fit bg-opacity-80 backdrop-blur-[0.5rem]">
+            <ul className="flex_center gap-6 text-xs md:text-base md:gap-16 bg-[#161a31] rounded-full px-4 py-3 max-w-fit bg-opacity-80 backdrop-blur-[0.5rem]">
               <li onClick={() => handleClick}>
                 {active ? "" : ""}
                 <a href="#home">Home</a>
