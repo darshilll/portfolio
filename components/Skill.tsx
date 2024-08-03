@@ -24,7 +24,7 @@ const Skill = ({ id }: { id: number }) => {
   return (
     <motion.section
       className="flex_center flex-col w-full"
-      id="about"
+      id="skills"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -36,14 +36,14 @@ const Skill = ({ id }: { id: number }) => {
 
       {/* Tech stack list div */}
       {id === 2 && (
-        <div className="flex flex-col gap-1 lg:gap-5 w-fit px-64">
+        <div className="flex flex-col gap-1 lg:gap-5 w-fit px-64 h-full ">
           {/* tech stack lists */}
-          <div className="flex gap-3 lg:gap-8 absolute z-60">
+          <div className="flex gap-3 lg:gap-8 absolute z-40">
             {firstLists.map((item, i) => (
               <span
                 key={i}
                 className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E] text-gray-400"
               >
                 {item}
               </span>
@@ -54,7 +54,7 @@ const Skill = ({ id }: { id: number }) => {
               <span
                 key={i}
                 className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E] text-gray-400"
               >
                 {item}
               </span>
@@ -65,7 +65,7 @@ const Skill = ({ id }: { id: number }) => {
               <span
                 key={i}
                 className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    lg:opacity-100 rounded-lg text-center bg-[#10132E] text-gray-400"
               >
                 {item}
               </span>

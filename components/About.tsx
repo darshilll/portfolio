@@ -9,6 +9,7 @@ const About = ({ id, className }: { id: number; className?: string }) => {
     <motion.section
       className="flex_center w-full"
       id="about"
+    
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
