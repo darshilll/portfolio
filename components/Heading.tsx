@@ -21,7 +21,7 @@ const Heading = () => {
         <p className="font-bold text-3xl lg:text-6xl text-purple">
           A Full-Stack Developer.
         </p>
-        <span className="mt-2 lg:text-lg text-md text-gray-300 lg:w-[50%]">
+        <span className="mt-2 lg:text-lg text-sm text-gray-300 lg:w-[50%]">
           I am dedicated to driving innovation and excellence by leveraging
           advanced development techniques, continually enhancing my skills, and
           high-quality software solutions.
