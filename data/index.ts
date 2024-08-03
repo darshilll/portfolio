@@ -79,17 +79,22 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
+    img: "/mail.svg",
+    link: "mailto:darsgajul2003@gmail.com",
+  },
+  {
+    id: 4,
+    img: "/link1.svg",
+    link: "https://www.linkedin.com/in/darshil-gajul",
+  },
+  {
+    id: 2,
     img: "/git.svg",
     link: "https://github.com/darshilll",
   },
   {
-    id: 2,
-    img: "/insta.svg",
-    link: "https://www.instagram.com/darshilll_.03",
-  },
-  {
     id: 3,
-    img: "/link.svg",
-    link: "https://www.linkedin.com/in/darshil-gajul",
+    img: "/insta1.svg",
+    link: "https://www.instagram.com/darshilll_.03",
   },
 ];
