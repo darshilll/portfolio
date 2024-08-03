@@ -6,7 +6,7 @@ const Experience = () => {
     <section id="experience">
       <div className="w-full flex_center flex-col">
         <p className="md:text-3xl text-2xl font-semibold flex_center text-center">
-          Work Experience
+          Work Experienc
         </p>
         <div className="max-w-[53rem] mt-12 flex_center flex-col gap-8 ml-12 md:ml-0">
           {workExperience.map(({ id, date, title, desc, desc1, tech }) => (
