@@ -18,8 +18,8 @@ const About = ({ id, className }: { id: number; className?: string }) => {
     >
       <div className="w-full flex_center flex-col mt-6">
         <p className="md:text-3xl text-2xl font-semibold max-w-fit">About Me</p>
-        <div className="md:w-[50%] px-6 mt-10 text-md md:text-lg leading-1 text-gray-400 text-justify leading-relaxed whitespace-normal break-words">
-          I am a Full-Stack Developer, with a strong focus on Frontend Development and Java. I specialize in developing MERN applications and I've completed Bachelor of Engineering (B.E) in Computer Science from SITRC. I work persistently, with self-discipline and commitment, to enhance my skills. In addition to coding, I enjoy building side projects and contributing to open-source projects because it allows me to explore my creativity and accomplish exciting tasks.
+        <div className="md:w-[50%] px-6 mt-10 text-md md:text-[19px] leading-1 text-gray-400 text-justify leading-relaxed whitespace-normal break-words">
+        I am a dedicated Full-Stack Developer with a strong focus on Frontend Development and Java. I specialize in architecting and developing robust MERN applications. With a Bachelor of Engineering (B.E) in Computer Science from SITRC, I continuously strive to elevate my skills through self-discipline and commitment. Beyond coding, I actively engage in building innovative side projects and contributing to impactful open-source initiatives. These endeavors fuel my creativity and drive me to achieve exciting and meaningful goals.
         </div>
       </div>
     </motion.section>
