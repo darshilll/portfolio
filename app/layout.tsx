@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Darshil Gajul | Portfolio",
@@ -14,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="!scroll-smooth">
-     <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
+     
       <body>
         <ThemeProvider
           attribute="class"
