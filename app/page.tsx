@@ -1,4 +1,4 @@
-//https://github.com/emmabostian/developer-portfolios?tab=readme-ov-file
+
 
 import Hero from "@/components/Hero";
 
