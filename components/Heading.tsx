@@ -29,7 +29,7 @@ const Heading = () => {
         </span>
       </motion.div>
       <motion.a
-        href="/darshilresume.pdf"
+        href="/darshilgresume.pdf"
         download
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
