@@ -27,7 +27,7 @@ const Experience = () => {
                     {tech.map((item) => (
                       <span
                         key={id}
-                        className="lg:px- py-1.5 px-1.5 text-sm md:text-md opacity-100 rounded-lg font-semibold text-center bg-gray-700 min-w-fit"
+                        className="lg:px-5 py-1.5 px-1.5 text-sm md:text-md opacity-100 rounded-lg font-semibold text-center bg-gray-700 min-w-fit"
                       >
                         {item}
                       </span>
