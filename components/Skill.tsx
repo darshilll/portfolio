@@ -1,3 +1,4 @@
+"use client"
 import { motion } from "framer-motion";
 import { GlobeDemo } from "./ui/GridGlobe";
 
@@ -10,6 +11,7 @@ const Skill = ({ id }: { id: number }) => {
     "Typescript",
     "Tailwind CSS",
     "React.js",
+    "Redux",
   ];
   const middleLists = [
     "Next.js",
@@ -20,7 +22,8 @@ const Skill = ({ id }: { id: number }) => {
     "MySQL",
   ];
 
-  const thirdLists = ["Postman", "Firebase", "Git/Github", "AWS", "Docker"];
+  const thirdLists = ["Postman", "Firebase", "Git/Github"];
+
   return (
     <motion.section
       className="flex_center flex-col w-full"
@@ -37,11 +40,11 @@ const Skill = ({ id }: { id: number }) => {
       {/* Tech stack list div */}
       {id === 2 && (
         <div className="flex flex-col gap-1 lg:gap-5 w-fit px-64 h-full ">
-          {/* tech stack lists */}
+          {/* Tech stack lists */}
           <div className="flex gap-3 lg:gap-8 absolute z-40">
             {firstLists.map((item, i) => (
               <span
-                key={i}
+                key={`first-${i}`} // Unique key for firstLists
                 className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E] text-gray-400"
               >
@@ -52,7 +55,7 @@ const Skill = ({ id }: { id: number }) => {
           <div className="flex gap-3 lg:gap-8">
             {middleLists.map((item, i) => (
               <span
-                key={i}
+                key={`middle-${i}`} // Unique key for middleLists
                 className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E] text-gray-400"
               >
@@ -63,7 +66,7 @@ const Skill = ({ id }: { id: number }) => {
           <div className="flex gap-3 lg:gap-8">
             {thirdLists.map((item, i) => (
               <span
-                key={i}
+                key={`third-${i}`} // Unique key for thirdLists
                 className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
                     lg:opacity-100 rounded-lg text-center bg-[#10132E] text-gray-400"
               >
@@ -76,4 +79,5 @@ const Skill = ({ id }: { id: number }) => {
     </motion.section>
   );
 };
+
 export default Skill;

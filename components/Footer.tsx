@@ -13,8 +13,7 @@ const Footer = () => {
           {socialMedia.map(({ img, id, link }) => (
              <a href={link} key={id} target="_blank" rel="noopener noreferrer">
             <img src={img} alt={img} key={id} height={21} width={21} />
-            </a>
-            
+            </a> 
           ))}
         </p>
       </div>
