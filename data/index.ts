@@ -1,5 +1,3 @@
-
-
 export const links = [
   {
     name: "Home",
@@ -9,7 +7,7 @@ export const links = [
     name: "About",
     hash: "#about",
   },
-  
+
   {
     name: "Skills",
     hash: "#skills",
@@ -22,21 +20,16 @@ export const links = [
     name: "Projects",
     hash: "#projects",
   },
-  
-  
 ] as const;
 
 export const gridItems = [
   {
     id: 2,
     title: "Skillset",
-    description: "",
     className:
       "lg:col-span-10 md:col-span-6 md:row-span-2 min-h-[45vh] md:min-h-[55vh]",
     imgClassName: "",
     titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
   },
 ];
 
@@ -46,13 +39,7 @@ export const projects = [
     title: "Identable",
     des: "Identable, a SaaS platform that leverages AI to revolutionize social media content creation and scheduling.",
     img: "/image.png",
-    iconLists: [
-      "/ang.svg",
-      "/nod.svg",
-      "/expr.png",
-      "/mo.svg",
-      "/tail.svg",
-    ],
+    iconLists: ["/ang.svg", "/nod.svg", "/expr.png", "/mo.svg", "/tail.svg"],
     link: "https://www.identable.io/",
   },
   {
@@ -97,7 +84,7 @@ export const workExperience = [
       "Designed and developed RESTful APIs using Node.js and Express, enhancing API reliability and performance while maintaining clean, well-documented code, ensuring seamless data exchange and integration with front-end applications.",
 
     date: "September 2024 - December 2024",
-    tech: ["Node.js","Express.js", "Tailwind CSS", "TypeScript", "MongoDB"],
+    tech: ["Node.js", "Express.js", "Tailwind CSS", "TypeScript", "MongoDB"],
   },
   {
     id: 2,

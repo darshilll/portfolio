@@ -51,6 +51,7 @@ export const BentoGridItem = ({
     "Typescript",
     "Tailwind CSS",
     "React.js",
+    "Redux",
     "Next.js",
     "Framer-Motion",
     "Node.js",
@@ -60,8 +61,6 @@ export const BentoGridItem = ({
     "Postman",
     "Firebase",
     "Git/Github",
-    "AWS",
-    "Docker",
   ];
 
   return (
@@ -103,7 +102,7 @@ export const BentoGridItem = ({
                 <ul className="flex_center flex-wrap h-full gap-2 text-lg">
                   {firstLists.map((item, i) => (
                     <motion.li
-                      key={i}
+                      key={`skill-${item}-${i}`} // Ensure unique key using item and index
                       className="lg:px-7 lg:py-4 py-2 px-3 text-sm lg:text-lg opacity-50 
                     lg:opacity-100 rounded-xl text-center bg-[#10132E] h-full"
                       variants={fadeInAnimationVariants}
